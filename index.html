@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A beginner-friendly playground for pointer, keyboard, focus, and custom events." />
+    <title>Event Bridge Lab</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="lab" aria-labelledby="title">
+      <header class="intro">
+        <p class="eyebrow">DOM / EVENTS · standalone open-source lab</p>
+        <h1 id="title">Event Bridge Lab</h1>
+        <p>A beginner-friendly playground for pointer, keyboard, focus, and custom events.</p>
+        <div class="actions"><button id="reset" class="secondary" type="button">Reset</button><button id="emit" type="button">Emit custom event</button></div>
+        <p id="status" class="status" role="status" aria-live="polite">Ready. No external service is required.</p>
+      </header>
+      <section class="workspace"><div class="panel"><h2>Event target</h2><p>Move, focus, or press Enter on the target. The DOM event stream stays visible.</p><button id="target" class="swatch" type="button">Interactive target</button></div><div class="panel"><h2>Event log</h2><ol id="log" aria-live="polite"></ol></div></section>
+      <section class="notes" aria-label="Study notes"><h2>How to study this</h2><p>Start with the button in `index.html`, then follow the `pointerenter`, `focus`, `keydown`, and custom-event listeners in `app.js`. Compare browser events with the small state update that renders the log.</p></section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
